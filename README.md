@@ -39,7 +39,7 @@ Output of `nim r examples/term.nim`:
 ## 🙋 FAQ
 
 -	Q: **_"Where can I find the doc?"_**\
-	A: Run `nimble docs`
+	A: [Documentation](https://gh.dayl.in/catppuccin-nim)
 
 ## 💝 Thanks to
 
