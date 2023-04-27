@@ -1,7 +1,6 @@
 Color	catppuccin/chroma.html#Color	chroma: Color	
 ColorRGB	catppuccin/chroma.html#ColorRGB	chroma: ColorRGB	
 ColorRGBA	catppuccin/chroma.html#ColorRGBA	chroma: ColorRGBA	
-ColorRGBX	catppuccin/chroma.html#ColorRGBX	chroma: ColorRGBX	
 ColorHSL	catppuccin/chroma.html#ColorHSL	chroma: ColorHSL	
 SomeColor	catppuccin/chroma.html#SomeColor	chroma: SomeColor	
 InvalidColor	catppuccin/chroma.html#InvalidColor	chroma: InvalidColor	
@@ -9,7 +8,6 @@ color	catppuccin/chroma.html#color,float32,float32,float32,float32	chroma: color
 rgb	catppuccin/chroma.html#rgb,uint8,uint8,uint8	chroma: rgb(r, g, b: uint8): ColorRGB	
 rgba	catppuccin/chroma.html#rgba,uint8,uint8,uint8,uint8	chroma: rgba(r, g, b, a: uint8): ColorRGBA	
 hsl	catppuccin/chroma.html#hsl,float32,float32,float32	chroma: hsl(h, s, l: float32): ColorHSL	
-rgba	catppuccin/chroma.html#rgba,ColorRGBX	chroma: rgba(c: ColorRGBX): ColorRGBA	
 rgb	catppuccin/chroma.html#rgb,Color	chroma: rgb(c: Color): ColorRGB	
 color	catppuccin/chroma.html#color,ColorRGB	chroma: color(c: ColorRGB): Color	
 rgba	catppuccin/chroma.html#rgba,Color	chroma: rgba(c: Color): ColorRGBA	
