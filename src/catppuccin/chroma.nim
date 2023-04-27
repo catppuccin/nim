@@ -28,13 +28,6 @@ type
     b*: uint8 ## Blue 0-255
     a*: uint8 ## Alpha 0-255
 
-  ColorRGBX* = object
-    ## Premultiplied alpha RGBA color stored as 4 uint8s
-    r*: uint8 ## Red 0-a
-    g*: uint8 ## Green 0-a
-    b*: uint8 ## Blue 0-a
-    a*: uint8 ## Alpha 0-255
-
   # Color Space: HSL
   ColorHSL* = object
     ## HSL attempts to resemble more perceptual color models
@@ -77,18 +70,6 @@ proc hsl*(h, s, l: float32): ColorHSL {.inline.} =
 # chroma/colortypes ---------------
 
 # chroma/transformations ----------
-
-proc rgba*(c: ColorRGBX): ColorRGBA {.inline.} =
-  ## Convert a premultiplied alpha RGBA to a straight alpha RGBA.
-  result.r = c.r
-  result.g = c.g
-  result.b = c.b
-  result.a = c.a
-  if result.a != 0 and result.a != 255:
-    let multiplier = round((255 / c.a.float32) * 255).uint32
-    result.r = ((result.r.uint32 * multiplier + 127) div 255).uint8
-    result.g = ((result.g.uint32 * multiplier + 127) div 255).uint8
-    result.b = ((result.b.uint32 * multiplier + 127) div 255).uint8
 
 proc rgb*(c: Color): ColorRGB {.inline.} =
   ## Convert Color to ColorRGB
