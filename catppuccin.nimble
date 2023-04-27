@@ -1,7 +1,7 @@
 import std/[os,strformat]
 # Package
 
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "Daylin Morgan"
 description   = "Soothing pastel theme for nim"
 license       = "MIT"
@@ -10,7 +10,7 @@ srcDir        = "src"
 
 # Dependencies
 
-requires "nim >= 1.6.12"
+requires "nim >= 1.4"
 
 task gen, "generate src/catppuccin/palette.nim":
   let paletteJson = "./tools/palette-porcelain.json"
