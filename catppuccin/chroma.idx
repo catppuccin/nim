@@ -1,0 +1,34 @@
+Color	catppuccin/chroma.html#Color	chroma: Color	
+ColorRGB	catppuccin/chroma.html#ColorRGB	chroma: ColorRGB	
+ColorRGBA	catppuccin/chroma.html#ColorRGBA	chroma: ColorRGBA	
+ColorRGBX	catppuccin/chroma.html#ColorRGBX	chroma: ColorRGBX	
+ColorHSL	catppuccin/chroma.html#ColorHSL	chroma: ColorHSL	
+SomeColor	catppuccin/chroma.html#SomeColor	chroma: SomeColor	
+InvalidColor	catppuccin/chroma.html#InvalidColor	chroma: InvalidColor	
+color	catppuccin/chroma.html#color,float32,float32,float32,float32	chroma: color(r, g, b: float32; a: float32 = 1.0): Color	
+rgb	catppuccin/chroma.html#rgb,uint8,uint8,uint8	chroma: rgb(r, g, b: uint8): ColorRGB	
+rgba	catppuccin/chroma.html#rgba,uint8,uint8,uint8,uint8	chroma: rgba(r, g, b, a: uint8): ColorRGBA	
+hsl	catppuccin/chroma.html#hsl,float32,float32,float32	chroma: hsl(h, s, l: float32): ColorHSL	
+rgba	catppuccin/chroma.html#rgba,ColorRGBX	chroma: rgba(c: ColorRGBX): ColorRGBA	
+rgb	catppuccin/chroma.html#rgb,Color	chroma: rgb(c: Color): ColorRGB	
+color	catppuccin/chroma.html#color,ColorRGB	chroma: color(c: ColorRGB): Color	
+rgba	catppuccin/chroma.html#rgba,Color	chroma: rgba(c: Color): ColorRGBA	
+color	catppuccin/chroma.html#color,ColorRGBA	chroma: color(c: ColorRGBA): Color	
+hsl	catppuccin/chroma.html#hsl,Color	chroma: hsl(c: Color): ColorHSL	
+color	catppuccin/chroma.html#color,ColorHSL	chroma: color(c: ColorHSL): Color	
+color	catppuccin/chroma.html#color,Color	chroma: color(c: Color): Color	
+to	catppuccin/chroma.html#to,SomeColor,typedesc[T]	chroma: to[T: SomeColor](c: SomeColor; toColor: typedesc[T]): T	
+asColor	catppuccin/chroma.html#asColor,SomeColor	chroma: asColor(c: SomeColor): Color	
+asRgb	catppuccin/chroma.html#asRgb,SomeColor	chroma: asRgb(c: SomeColor): ColorRGB	
+asHsl	catppuccin/chroma.html#asHsl,SomeColor	chroma: asHsl(c: SomeColor): ColorHSL	
+`$`	catppuccin/chroma.html#$,Color	chroma: `$`(c: Color): string	
+hash	catppuccin/chroma.html#hash,Color	chroma: hash(c: Color): Hash	
+hash	catppuccin/chroma.html#hash,ColorRGB	chroma: hash(c: ColorRGB): Hash	
+hash	catppuccin/chroma.html#hash,ColorRGBA	chroma: hash(c: ColorRGBA): Hash	
+hash	catppuccin/chroma.html#hash,ColorHSL	chroma: hash(c: ColorHSL): Hash	
+toHex	catppuccin/chroma.html#toHex,Color	chroma: toHex(c: Color): string	
+toHexAlpha	catppuccin/chroma.html#toHexAlpha,Color	chroma: toHexAlpha(c: Color): string	
+toHtmlHex	catppuccin/chroma.html#toHtmlHex,Color	chroma: toHtmlHex(c: Color): string	
+toHtmlHexTiny	catppuccin/chroma.html#toHtmlHexTiny,Color	chroma: toHtmlHexTiny(c: Color): string	
+toHtmlRgb	catppuccin/chroma.html#toHtmlRgb,Color	chroma: toHtmlRgb(c: Color): string	
+toHtmlRgba	catppuccin/chroma.html#toHtmlRgba,Color	chroma: toHtmlRgba(c: Color): string	
