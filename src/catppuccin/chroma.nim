@@ -1,6 +1,8 @@
 import std/[hashes, math, strutils]
-## standalone types/methods ported from treeform/chroma
+
+## Standalone types/methods ported from treeform/chroma.
 ##
+## See `chroma` `LICENSE <https://github.com/treeform/chroma/blob/master/LICENSE>`_.
 
 # chroma/colortypes ---------------
 type
