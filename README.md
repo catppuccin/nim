@@ -11,41 +11,30 @@
 	<a href="https://github.com/catppuccin/nim/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/template?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-<p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
-</p>
-
-## Previews
-
-<details>
-<summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
-</details>
-<details>
-<summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
-</details>
-<details>
-<summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
-</details>
-<details>
-<summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
-</details>
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+```sh
+nimble install https://github.com/catppuccin/nim
+```
+
+The `catppuccin` nim library was designed to interface with [`treeform/chroma`](https://github.com/treeform/chroma), however it is not required for basic usage. Some of the basic color types and transformations have been ported from `chroma`
+
+If you do wish to access `catppuccin` colors alongside `chroma` compile with `-d:inheritChroma` (see `./examples/use_chroma.nim`) to use the color types defined by `chroma`.
+
+### Example
+
+```nim
+import catppuccin
+
+echo mocha.rosewater.color().toHex()
+```
 
 <!-- this section is optional -->
 ## 🙋 FAQ
 
 -	Q: **_"Where can I find the doc?"_**\
-	A: Run `nim mkDocs`
+	A: Run `nimble docs`
 
 ## 💝 Thanks to
 

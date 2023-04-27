@@ -1,0 +1,6 @@
+/public/
+/tools/palette-porcelain.json
+
+/tests/**
+!/tests/*.nim
+!/tests/*.nims
