@@ -22,13 +22,18 @@ The `catppuccin` nim library was designed to interface with [`treeform/chroma`](
 
 If you do wish to access `catppuccin` colors alongside `chroma` compile with `-d:inheritChroma` (see `./examples/use_chroma.nim`) to use the color types defined by `chroma`.
 
-### Example
+### Examples
 
 ```nim
 import catppuccin
 
 echo mocha.rosewater.color().toHex()
 ```
+
+Output of `nim r examples/term.nim`:
+
+![example screenshot](./assets/term.svg)
+
 
 <!-- this section is optional -->
 ## 🙋 FAQ
