@@ -9,7 +9,7 @@ type
         green*, teal*, sky*, sapphire*, blue*, lavender*, text*, subtext1*,
             subtext0*, overlay2*,
         overlay1*, surface2*, surface1*, surface0*, base*, mantle*,
-            crust*: ColorRGB
+            crust*: Color
 
 include catppuccin/palette
 

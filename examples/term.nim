@@ -3,8 +3,12 @@ import catppuccin
 
 const ansiReset = "\e[0m"
 
-proc ansi(s: string, c: ColorRGB): string =
-  let code = &"\e[48;2;{c.r};{c.g};{c.b}m"
+proc ansi(s: string, c: Color): string =
+  let
+    cRgb = c.rgb()
+    (r, g, b) = (cRgb.r, cRgb.g, cRgb.b)
+    code = &"\e[48;2;{r};{g};{b}m"
+
   result.add(code)
   result.add(s)
   result.add(ansiReset)

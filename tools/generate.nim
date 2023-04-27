@@ -15,7 +15,7 @@ type
 
 proc createColor(c: Color, name: string): string =
   result = &"""
-    {name}: ColorRGB(r: {c.rgb[0]}, g: {c.rgb[1]}, b: {c.rgb[2]})"""
+    {name}: ColorRGB(r: {c.rgb[0]}, g: {c.rgb[1]}, b: {c.rgb[2]}).color()"""
 
 proc createFlavor(f: Flavor, name: string): string =
   var colorsDef: seq[string]
