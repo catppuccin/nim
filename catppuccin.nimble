@@ -25,7 +25,7 @@ task docs, "Deploy doc html + search index to public/ directory":
     pkgName = "catppuccin"
     srcFile = getCurrentDir() / "src" / (pkgName & ".nim")
     gitUrl = "https://github.com/daylinmorgan/catppuccin-nim"
-  selfExec &"doc --index:on --git.url:{gitUrl} --outdir:{deployDir} --project {srcFile}"
+  selfExec &"doc --index:on --git.url:{gitUrl} --git.commit:v{version} --outdir:{deployDir} --project {srcFile}"
   withDir deployDir:
     mvFile(pkgName & ".html", "index.html")
     for file in walkDirRec(".", {pcFile}):
