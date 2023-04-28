@@ -39,7 +39,7 @@ Output of `nim r examples/term.nim`:
 ## 🙋 FAQ
 
 -	Q: **_"Where can I find the doc?"_**\
-	A: [Documentation](https://gh.dayl.in/catppuccin-nim)
+	A: [Documentation](https://catppuccin.github.io./nim)
 
 ## 💝 Thanks to
 
