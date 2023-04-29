@@ -15,7 +15,7 @@
 ## Usage
 
 ```sh
-nimble install https://github.com/catppuccin/nim
+nimble install catppucin 
 ```
 
 The `catppuccin` nim library was designed to interface with [`treeform/chroma`](https://github.com/treeform/chroma), however it is not required for basic usage. Some of the basic color types and transformations have been ported from `chroma`
@@ -32,7 +32,7 @@ echo mocha.rosewater.color().toHex()
 
 Output of `nim r examples/term.nim`:
 
-![example screenshot](./assets/term.svg)
+![example screenshot](https://raw.githubusercontent.com/catppuccin/nim/main/assets/term.svg)
 
 
 <!-- this section is optional -->
