@@ -15,7 +15,7 @@
 ## Usage
 
 ```sh
-nimble install catppucin 
+nimble install catppuccin
 ```
 
 The `catppuccin` nim library was designed to interface with [`treeform/chroma`](https://github.com/treeform/chroma), however it is not required for basic usage. Some of the basic color types and transformations have been ported from `chroma`
